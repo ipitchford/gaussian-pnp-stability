@@ -1,0 +1,61 @@
+{
+  "title": "Gaussian-kernel plug-and-play iterations can be unstable: a sharp dimension threshold for irreducible unit-diagonal kernels, the role of the mixing gap, and why unit diagonals matter",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> Plug-and-play (PnP) methods for linear inverse problems alternate a data step with a denoiser. Sinha, Kumar, Athalye and Chaudhury (IEEE Trans. Signal Process. 73, 2025, Section II-A) observed that PnP-ISTA with row-normalised kernel denoisers, such as Gaussian non-local means, seems to converge in practice but that they had found neither a proof nor a counterexample. This package answers the question for PnP-ISTA and PnP-ADMM.</p><p>With irreducible unit-diagonal kernels and a data Hessian that preserves constants, both iterations are stable in dimensions one to three for every admissible step. In dimension four they need not be: explicit Gaussian kernels with a fixed positive forward operator make both diverge at any prescribed step up to one half, and an exact two-parameter classification locates the boundary (t* &asymp; 0.5313). A twelve-dimensional positive convolution example fails exactly for 0 &lt; t &lt; 1.9157&times;10<sup>&minus;4</sup>. Without unit diagonals, failure already occurs in dimension three. The cause is a small mixing gap: steps below g/&radic;&kappa;<sub>&pi;</sub> are always safe and linear scaling in g cannot be improved. Symmetric denoisers are stable exactly when no vector fixed by the denoiser is annihilated by the Hessian, extending Athalye, Chaudhury and Kumar (2023).</p><p>Practical size: the divergence is extremely slow (at most about 1.7&times;10<sup>&minus;5</sup> per iteration, so tenfold growth needs 10<sup>5</sup>&ndash;10<sup>6</sup> iterations) and the affinities involved are tiny; the results are structural and do not demonstrate divergence in an imaging pipeline. Not the first disproof of the broader Banerjee&ndash;Chaudhury conjecture (S. Patel's online counterexample came first).</p><p>The archive contains the 28-page manuscript (PDF and Markdown source), exact-arithmetic verifiers, coefficient files and a standard-library checker for the Theorem 3 and 4 certificates (printed in Appendix C), semantic negative controls, a replay driver, CI and SHA-256 sums. Assurance boundary: written proofs; exact rational certificates; producer-side replay from a clean copy; internal AI-assisted review (multi-perspective review, correctness audits by a different model, a targeted proof audit and a verification re-review). This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Prose, manuscript and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23690125",
+  "publication_date": "2026-10-27",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "plug-and-play",
+    "kernel denoiser",
+    "non-local means",
+    "Schur stability",
+    "PnP-ISTA",
+    "PnP-ADMM",
+    "mixing gap",
+    "exact certificate",
+    "Bernstein polynomials",
+    "Sturm sequences"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/gaussian-pnp-stability/tree/v1.0.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/gaussian-pnp-stability/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1109/TSP.2025.3573044",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "arXiv:2509.06715",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "10.1109/LSP.2023.3323248",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1109/TIP.2021.3075092",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Original code (*.py, CI workflow) is released under the MIT licence; see LICENSES.md in the archive. The short quotation from Sinha et al. (2025) remains the source authors' text."
+}

@@ -1,0 +1,6 @@
+# Exact verifiers, certificate checker and negative controls: Python >= 3.11 standard library.
+# certify_revision.py, emit_certificates.py, practical_numbers.py and replay_all.py:
+sympy==1.13.3
+# make_figure.py (illustration only):
+numpy==2.1.3
+matplotlib==3.9.2

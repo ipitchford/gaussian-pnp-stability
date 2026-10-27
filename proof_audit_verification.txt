@@ -1,0 +1,43 @@
+Track I reproducibility record — 20 October 2026
+Python: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 verify_exact.py
+Working directory: /workspace/scratch/c84748618f65/pnp_stability_research
+SHA256: f96d218a0cd06b90c8f5b8ec44eaef7a91dc191137fe142e4e42e08366df5f7f
+Exit status: 0
+Elapsed seconds: 0.031423
+STDOUT:
+PASS: universal negativity certificate for every 0 < t <= 1/2
+reduced determinant coefficients: ['0', '0', '-1973/25000000', '46420259/312500000000', '1383027723/1250000000000000000', '-426821811/62500000000000000000000', '-4748139/156250000000000000000000000']
+cubic after factoring t^2*(1+t/100000): ['-1973/25000000', '74272809/500000000000', '-236896251/625000000000000000', '-4748139/1562500000000000000000']
+fixed stationary distribution: ['10/31', '10/31', '6/31', '5/31']
+verified t = 1/1000000 ; Gaussian entry error = 1.3877787807814457e-17
+verified t = 1/10000 ; Gaussian entry error = 4.163336342344337e-17
+verified t = 1/100 ; Gaussian entry error = 1.3877787807814457e-17
+verified t = 1/10 ; Gaussian entry error = 2.7755575615628914e-17
+verified t = 1/2 ; Gaussian entry error = 2.7755575615628914e-17
+PASS: all eight bivariate determinant coefficients
+gap derivative: 31/26
+first-loss derivative: 968750/133
+threshold / gap limit: 812500/133
+All exact checks passed. Gaussian floating-point checks are supplementary.
+
+STDERR:
+
+
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 verify_circulant.py
+Working directory: /workspace/scratch/c84748618f65/pnp_stability_research
+SHA256: 2cd488f34f589d8f48b69073f8cc7c2b8c3beb0b88bf5ffbbce0b70b47ce3f34
+Exit status: 0
+Elapsed seconds: 0.054699
+STDOUT:
+PASS: positive symmetric circulant forward matrix, condition(A)=12
+PASS: positive unit-diagonal reversible kernel
+PASS: exact det(I-P)<0 and det(I-R)<0 at t=1/100, epsilon=10^-9
+compressed projection eigenvalue: -12875/406616
+compressed Hessian eigenvalue: -6287/8364672
+Gaussian coordinate error (supplementary): 6.938893903907228e-18
+Exact finite certificate written to circulant_certificate.json
+
+STDERR:
+

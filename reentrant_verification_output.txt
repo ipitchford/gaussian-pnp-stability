@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "checks": 63,
+  "det_I_minus_P": "-2898619/51200000000",
+  "det_I_minus_R": "-26087571/648290000000",
+  "report": "reentrant_verification.json",
+  "elapsed_seconds": 0.006685625005047768
+}

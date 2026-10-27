@@ -1,0 +1,39 @@
+f783ed0bc72e689a3734599defb009cd662b056d392a5aa433cdff9f759ff5ba  thm4_classification.json
+PASS: P: 1-D_P numerator: 9 Bernstein coefficients, all > 0, min 8.125e+10
+PASS: P: 1-D_P denominator: 3 Bernstein coefficients, all > 0, min 3.750e+11
+PASS: P: 1+T_P+D_P numerator: 9 Bernstein coefficients, all > 0, min 1.112e+12
+PASS: P: 1+T_P+D_P denominator: 3 Bernstein coefficients, all > 0, min 3.750e+11
+PASS: R: 1-D_R numerator: 9 Bernstein coefficients, all > 0, min 8.125e+10
+PASS: R: 1-D_R denominator: 9 Bernstein coefficients, all > 0, min 3.750e+11
+PASS: R: 1+T_R+D_R numerator: 9 Bernstein coefficients, all > 0, min 1.338e+12
+PASS: R: 1+T_R+D_R denominator: 9 Bernstein coefficients, all > 0, min 3.750e+11
+PASS: theta numerator: 1 Bernstein coefficients, all > 0, min 6.250e+08
+PASS: theta denominator: 9 Bernstein coefficients, all > 0, min 6.250e+08
+PASS: P antisym: 1-p_a numerator: 4 Bernstein coefficients, all > 0, min 4.750e+04
+PASS: P antisym: 1-p_a denominator: 2 Bernstein coefficients, all > 0, min 5.000e+04
+PASS: P antisym: 1+p_a numerator: 4 Bernstein coefficients, all > 0, min 5.250e+04
+PASS: P antisym: 1+p_a denominator: 2 Bernstein coefficients, all > 0, min 5.000e+04
+PASS: R antisym: 1-r_a numerator: 4 Bernstein coefficients, all > 0, min 4.750e+04
+PASS: R antisym: 1-r_a denominator: 4 Bernstein coefficients, all > 0, min 5.000e+04
+PASS: R antisym: 1+r_a numerator: 4 Bernstein coefficients, all > 0, min 5.250e+04
+PASS: R antisym: 1+r_a denominator: 4 Bernstein coefficients, all > 0, min 5.000e+04
+PASS: a2 numerator: 3 Bernstein coefficients, all > 0, min 7.514e+06
+PASS: a2 denominator: 1 Bernstein coefficients, all > 0, min 1.250e+11
+PASS: 4*a2+a1 (vertex < 2) numerator: 3 Bernstein coefficients, all > 0, min 9.608e+06
+PASS: 4*a2+a1 (vertex < 2) denominator: 1 Bernstein coefficients, all > 0, min 4.688e+10
+PASS: -a1 numerator: 3 Bernstein coefficients, all > 0, min 2.646e+03
+PASS: -a1 denominator: 1 Bernstein coefficients, all > 0, min 1.500e+08
+PASS: Delta(eps,2) = a0+2a1+4a2 numerator: 3 Bernstein coefficients, all > 0, min 1.589e+07
+PASS: Delta(eps,2) = a0+2a1+4a2 denominator: 1 Bernstein coefficients, all > 0, min 9.375e+10
+PASS: discriminant = a1^2 - 4 a0 a2 (positive multiple)
+PASS: discriminant square-free; sign change across interval
+PASS: eps_crit: Sturm counts V(0)=3, V(L)=3, V(U)=2, V(1e-4)=2; unique root in (1394/82258229, 343/20240009)
+f00414decf125afb08a335eaae23b69cf6dc36bf40fac2087458dfd2d3f181f6  thm4_tstar.json
+PASS: t* polynomial = Delta(t/100000, t)/t (positive multiple)
+PASS: t* polynomial square-free; sign change across interval
+PASS: Delta(t/1e5,t) < 0 on (0,t*), > 0 on (t*,2]: V(0)=2, V(L)=2, V(U)=1, V(2)=1; t* in (0.5312853253, 0.5312853254)
+4badd51b36eee7a934e5f02b50f6ede63b0f62731c8a23c5b31e27b6f8428d30  thm3_circulant.json
+      gcd(p, p') has degree 6 (repeated factors; counts are of distinct roots)
+PASS: p changes sign across the isolating interval: p(L) < 0 < p(U)
+PASS: p(t)=N_c/t^2, degree 34: p(0)<0; V(0)=19, V(L)=19, V(U)=18, V(1)=18, V(2)=18; t_c in (0.00019157074941, 0.00019157074942), the only root in (0,2]
+ALL CERTIFICATE CHECKS PASSED

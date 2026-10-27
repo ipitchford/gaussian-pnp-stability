@@ -1,0 +1,24 @@
+{
+ "schemaVersion": "1.0",
+ "release": "gaussian-pnp-stability",
+ "version": "1.0.0-candidate",
+ "doi": "10.5281/zenodo.23690125",
+ "status": "unrefereed research candidate; internal AI-assisted review only",
+ "target": {
+  "citation": "Sinha, Kumar, Athalye & Chaudhury (2025), IEEE Transactions on Signal Processing 73, 2646-2659, Section II-A (open question on PnP-ISTA with kernel denoisers)",
+  "doi": "10.1109/TSP.2025.3573044",
+  "sourceVersionRead": "arXiv:2505.15318v1"
+ },
+ "claims": [
+  {"id": "dims-1-3-stable", "statement": "For n <= 3, irreducible symmetric nonnegative K with K_ii = 1, K_ij <= 1, and symmetric PSD B with Be = be, b > 0: PnP-ISTA P(t) = W(I - tB) and PnP-ADMM R(t) are Schur stable for all 0 < t < 2/rho(B), W = diag(Ke)^-1 K.", "status": "proved", "location": "Theorem 1(a), Section 5", "dependsOn": "Banerjee-Chaudhury Theorem 1.3 (a self-contained argument is also given)", "evidence": ["gaussian_pnp_stability.pdf"]},
+  {"id": "dim-4-unstable", "statement": "A fixed strictly positive symmetric stochastic SPD A in R^{4x4} (B = A^2) and fixed stationary vector admit, for each 0 < t <= 1/2, a Gaussian kernel K_t with kappa_2(K_t) < 19.22 for which P_t and R_t have a real eigenvalue > 1.", "status": "proved-exact-certificate", "location": "Theorem 1(b), Sections 6-7", "evidence": ["verify_exact.py", "verification_output.txt"]},
+  {"id": "four-state-classification", "statement": "For 0 <= eps <= 1e-4 and 0 < t < 2 the four-state family is Schur stable iff Delta(eps,t) > 0; unstable steps exist iff eps < eps_crit = 1.6946633e-5; first loss T_-(eps) = (968750/133) eps + O(eps^2); along eps = t/1e5 unstable exactly for 0 < t < t* = 0.53128532534...", "status": "proved-exact-certificate", "location": "Theorem 4, Appendix C", "evidence": ["certify_revision.py", "certificates/thm4_classification.json", "certificates/thm4_tstar.json", "check_certificates.py"]},
+  {"id": "gap-bound", "statement": "For primitive reversible W with nonnegative eigenvalues, gap g and stationary ratio kappa_pi, both iterations are Schur stable when t rho(B) < min{2, g/(sqrt(kappa_pi) - g)}; the order g is sharp within the four-state family (constant off by about 8,640).", "status": "proved", "location": "Theorem 2, Sections 8.1, 8.3", "evidence": ["gaussian_pnp_stability.pdf"]},
+  {"id": "circulant", "statement": "A fixed strictly positive symmetric circulant stochastic SPD A_c in R^{12x12} and Gaussian kernels with eps = t^2 give a real eigenvalue > 1 for both iterations exactly for 0 < t < t_c = 1.9157074941...e-4 (unique root of p in (0,2]).", "status": "proved-exact-certificate", "location": "Theorem 3, Section 9, Appendix C", "evidence": ["certify_revision.py", "certificates/thm3_circulant.json", "check_certificates.py", "verify_circulant.py"]},
+  {"id": "unit-diagonal-essential", "statement": "Without unit diagonals a reversible positive kernel with fixed positive forward operator is unstable in dimension three on an interval (t_-, t_+); dimension three is minimal there.", "status": "proved", "location": "Theorem 5, Proposition 1, Section 10", "evidence": ["verify_reentrant.py", "reentrant_verification.json"]},
+  {"id": "symmetric-denoisers", "statement": "Symmetric W with spectrum in (-1,1] and PSD B: P(t), R(t) Schur stable for 0 < t < 2/rho(B) iff ker(I-W) and ker B meet only in 0; symmetrically normalised irreducible kernels satisfy this when Be = be.", "status": "proved", "location": "Theorem 6, Corollary 1, Section 11", "dependsOn": "extends Athalye, Chaudhury & Kumar (2023), doi:10.1109/LSP.2023.3323248", "evidence": ["gaussian_pnp_stability.pdf"]},
+  {"id": "practical-growth", "statement": "Excess spectral radius at most about 1.72e-5 per iteration (four-state) and about 3.6e-8 (circulant).", "status": "numerical", "location": "Section 12", "evidence": ["practical_numbers.py"]},
+  {"id": "large-steps-dim-4", "statement": "Whether some irreducible unit-diagonal kernel on four points is unstable at a step in (t*, 2).", "status": "open", "location": "Section 14.1"}
+ ],
+ "scope": "Instability results choose the kernel for each step; each fixed primitive kernel is stable for sufficiently small steps. Not the first disproof of Banerjee-Chaudhury Conjecture 1.1 (Patel's MathDB post). No imaging experiment."
+}

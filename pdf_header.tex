@@ -1,0 +1,18 @@
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+\usepackage{etoolbox}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\setlength{\headheight}{15pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt minus 1pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Gaussian PnP stability}}
+\fancyhead[R]{\small 27 October 2026}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\preto{\section}{\Needspace{5\baselineskip}}
+\preto{\subsection}{\Needspace{4\baselineskip}}
+\allowdisplaybreaks[2]

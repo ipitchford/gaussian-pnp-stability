@@ -1,0 +1,172 @@
+
+################################################################
+### verify_exact.py (Theorem 1(b))
+################################################################
+PASS: universal negativity certificate for every 0 < t <= 1/2
+reduced determinant coefficients: ['0', '0', '-1973/25000000', '46420259/312500000000', '1383027723/1250000000000000000', '-426821811/62500000000000000000000', '-4748139/156250000000000000000000000']
+cubic after factoring t^2*(1+t/100000): ['-1973/25000000', '74272809/500000000000', '-236896251/625000000000000000', '-4748139/1562500000000000000000']
+fixed stationary distribution: ['10/31', '10/31', '6/31', '5/31']
+verified t = 1/1000000 ; Gaussian entry error = 1.3877787807814457e-17
+verified t = 1/10000 ; Gaussian entry error = 4.163336342344337e-17
+verified t = 1/100 ; Gaussian entry error = 1.3877787807814457e-17
+verified t = 1/10 ; Gaussian entry error = 2.7755575615628914e-17
+verified t = 1/2 ; Gaussian entry error = 2.7755575615628914e-17
+PASS: all eight bivariate determinant coefficients
+gap derivative: 31/26
+first-loss derivative: 968750/133
+threshold / gap limit: 812500/133
+All exact checks passed. Gaussian floating-point checks are supplementary.
+
+################################################################
+### verify_circulant.py (Theorem 3 constants, off-curve witness)
+################################################################
+PASS: positive symmetric circulant forward matrix, condition(A)=12
+PASS: positive unit-diagonal reversible kernel
+PASS: exact det(I-P)<0 and det(I-R)<0 at t=1/100, epsilon=10^-9
+compressed projection eigenvalue: -12875/406616
+compressed Hessian eigenvalue: -6287/8364672
+Gaussian coordinate error (supplementary): 6.938893903907228e-18
+Exact finite certificate written to circulant_certificate.json
+
+################################################################
+### verify_reentrant.py (Theorem 5)
+################################################################
+{
+  "status": "passed",
+  "checks": 63,
+  "det_I_minus_P": "-2898619/51200000000",
+  "det_I_minus_R": "-26087571/648290000000",
+  "report": "reentrant_verification.json",
+  "elapsed_seconds": 0.006649624992860481
+}
+
+################################################################
+### certify_revision.py (Theorems 3, 4; conditioning)
+################################################################
+
+========================================================================
+[A] Four-state Gaussian family: two-parameter classification
+========================================================================
+PASS: char. polynomials factor as (constant)(antisymmetric)(quadratic) for P and R
+PASS: 1 - tr + det of the P-quotient equals Delta(eps,t)/(1+eps)^2, eq. (33)
+PASS: P: 1-det > 0 on [0,1/10000]x[0,2]  (Bernstein boxes: num 1, den 1)
+PASS: P: 1+tr+det > 0 on [0,1/10000]x[0,2]  (Bernstein boxes: num 1, den 1)
+PASS: R: 1-det > 0 on [0,1/10000]x[0,2]  (Bernstein boxes: num 1, den 1)
+PASS: R: 1+tr+det > 0 on [0,1/10000]x[0,2]  (Bernstein boxes: num 1, den 1)
+PASS: 1 - tr + det of the R-quotient equals Delta times a positive factor
+PASS: antisymmetric modes of P and R lie in (-1,1); constant modes 1-t, 1/(1+t) stable for 0<t<2
+critical epsilon (discriminant root) in [1.694663277835355e-05, 1.6946632780647477e-05]
+PASS: on (0,1/10000]: a0>0, a1<0, a2>0, vertex<2; Delta(eps,.) is negative somewhere in (0,2) iff eps < eps_crit
+first-loss root T_-(eps) = 595515472565625*epsilon**2/4705274 + 968750*epsilon/133
+family eps=t/1e5: Delta<0 exactly on (0, t*), t* in [0.531285325347965, 0.5312853253481479]
+PASS: t* is the unique root in (0,2] of the cubic f in eq. (20); f<0 on (0,t*), f>0 on (t*,2]
+
+========================================================================
+[B] Twelve-state circulant family along eps = t^2
+========================================================================
+numerator det(D - K + tKB) has degree 36 and factor t^2
+PASS: det(I-P(t)) < 0 for every 0 < t < t_c, t_c in [0.00019157074940914814, 0.0001915707494101085]
+      next positive root at about 34.0
+PASS: exact witness on the curve: t=1/10000, eps=10^-8: det(I-P) = -2.8621156050551957e-17 , det(I-R) = -2.861668450530133e-17
+
+========================================================================
+[C] Conditioning of the four-state affinities
+========================================================================
+PASS: lambda_max(K0) = (29+sqrt(89))/20, kappa_2(K0) = 19.2169905660283 ; kappa_2(K_t) < 19.21901246727503 < 19.22 for 0<t<=1/2
+
+All revision certificates passed. Report written to revision_certificate.json
+
+################################################################
+### emit_certificates.py (Appendix C coefficient files)
+################################################################
+Bernstein positive on [0,1/10000]x[0,2]: P: 1-D_P
+Bernstein positive on [0,1/10000]x[0,2]: P: 1+T_P+D_P
+Bernstein positive on [0,1/10000]x[0,2]: R: 1-D_R
+Bernstein positive on [0,1/10000]x[0,2]: R: 1+T_R+D_R
+Bernstein positive on [0,1/10000]x[0,2]: theta
+Bernstein positive on [0,1/10000]x[0,2]: P antisym: 1-p_a
+Bernstein positive on [0,1/10000]x[0,2]: P antisym: 1+p_a
+Bernstein positive on [0,1/10000]x[0,2]: R antisym: 1-r_a
+Bernstein positive on [0,1/10000]x[0,2]: R antisym: 1+r_a
+Bernstein positive on [0,1/10000]x[0,2]: a2
+Bernstein positive on [0,1/10000]x[0,2]: 4*a2+a1 (vertex < 2)
+Bernstein positive on [0,1/10000]x[0,2]: -a1
+Bernstein positive on [0,1/10000]x[0,2]: Delta(eps,2) = a0+2a1+4a2
+t* in [0.5312853253, 0.5312853254]
+t_c in [0.00019157074941, 0.00019157074942] degree of p: 34
+certificate files written to certificates
+
+################################################################
+### check_certificates.py (Appendix C, standard library only)
+################################################################
+f783ed0bc72e689a3734599defb009cd662b056d392a5aa433cdff9f759ff5ba  thm4_classification.json
+PASS: P: 1-D_P numerator: 9 Bernstein coefficients, all > 0, min 8.125e+10
+PASS: P: 1-D_P denominator: 3 Bernstein coefficients, all > 0, min 3.750e+11
+PASS: P: 1+T_P+D_P numerator: 9 Bernstein coefficients, all > 0, min 1.112e+12
+PASS: P: 1+T_P+D_P denominator: 3 Bernstein coefficients, all > 0, min 3.750e+11
+PASS: R: 1-D_R numerator: 9 Bernstein coefficients, all > 0, min 8.125e+10
+PASS: R: 1-D_R denominator: 9 Bernstein coefficients, all > 0, min 3.750e+11
+PASS: R: 1+T_R+D_R numerator: 9 Bernstein coefficients, all > 0, min 1.338e+12
+PASS: R: 1+T_R+D_R denominator: 9 Bernstein coefficients, all > 0, min 3.750e+11
+PASS: theta numerator: 1 Bernstein coefficients, all > 0, min 6.250e+08
+PASS: theta denominator: 9 Bernstein coefficients, all > 0, min 6.250e+08
+PASS: P antisym: 1-p_a numerator: 4 Bernstein coefficients, all > 0, min 4.750e+04
+PASS: P antisym: 1-p_a denominator: 2 Bernstein coefficients, all > 0, min 5.000e+04
+PASS: P antisym: 1+p_a numerator: 4 Bernstein coefficients, all > 0, min 5.250e+04
+PASS: P antisym: 1+p_a denominator: 2 Bernstein coefficients, all > 0, min 5.000e+04
+PASS: R antisym: 1-r_a numerator: 4 Bernstein coefficients, all > 0, min 4.750e+04
+PASS: R antisym: 1-r_a denominator: 4 Bernstein coefficients, all > 0, min 5.000e+04
+PASS: R antisym: 1+r_a numerator: 4 Bernstein coefficients, all > 0, min 5.250e+04
+PASS: R antisym: 1+r_a denominator: 4 Bernstein coefficients, all > 0, min 5.000e+04
+PASS: a2 numerator: 3 Bernstein coefficients, all > 0, min 7.514e+06
+PASS: a2 denominator: 1 Bernstein coefficients, all > 0, min 1.250e+11
+PASS: 4*a2+a1 (vertex < 2) numerator: 3 Bernstein coefficients, all > 0, min 9.608e+06
+PASS: 4*a2+a1 (vertex < 2) denominator: 1 Bernstein coefficients, all > 0, min 4.688e+10
+PASS: -a1 numerator: 3 Bernstein coefficients, all > 0, min 2.646e+03
+PASS: -a1 denominator: 1 Bernstein coefficients, all > 0, min 1.500e+08
+PASS: Delta(eps,2) = a0+2a1+4a2 numerator: 3 Bernstein coefficients, all > 0, min 1.589e+07
+PASS: Delta(eps,2) = a0+2a1+4a2 denominator: 1 Bernstein coefficients, all > 0, min 9.375e+10
+PASS: discriminant = a1^2 - 4 a0 a2 (positive multiple)
+PASS: discriminant square-free; sign change across interval
+PASS: eps_crit: Sturm counts V(0)=3, V(L)=3, V(U)=2, V(1e-4)=2; unique root in (1394/82258229, 343/20240009)
+f00414decf125afb08a335eaae23b69cf6dc36bf40fac2087458dfd2d3f181f6  thm4_tstar.json
+PASS: t* polynomial = Delta(t/100000, t)/t (positive multiple)
+PASS: t* polynomial square-free; sign change across interval
+PASS: Delta(t/1e5,t) < 0 on (0,t*), > 0 on (t*,2]: V(0)=2, V(L)=2, V(U)=1, V(2)=1; t* in (0.5312853253, 0.5312853254)
+4badd51b36eee7a934e5f02b50f6ede63b0f62731c8a23c5b31e27b6f8428d30  thm3_circulant.json
+      gcd(p, p') has degree 6 (repeated factors; counts are of distinct roots)
+PASS: p changes sign across the isolating interval: p(L) < 0 < p(U)
+PASS: p(t)=N_c/t^2, degree 34: p(0)<0; V(0)=19, V(L)=19, V(U)=18, V(1)=18, V(2)=18; t_c in (0.00019157074941, 0.00019157074942), the only root in (0,2]
+ALL CERTIFICATE CHECKS PASSED
+
+################################################################
+### practical_numbers.py (Section 12, floating point)
+################################################################
+============================================================
+[1] Four-state family, eps = t/100000
+============================================================
+ t        rho(P)-1     rho(R)-1     iters for 10x   smallest affinity
+ 1e-06    1.518e-10   1.518e-10   1.517e+10       2.0e-12
+ 0.01     1.479e-06   1.479e-06   1.557e+06       2.0e-08
+ 0.1      1.152e-05   1.152e-05   1.999e+05       2.0e-07
+ 0.25     1.711e-05   1.711e-05   1.345e+05       5.0e-07
+   symmetric normalisation at t=1/4: rho(S(I-tB)) - 1 = -0.00010297
+ 0.5      3.316e-06   3.316e-06   6.944e+05       1.0e-06
+============================================================
+[2] Twelve-state circulant family, eps = t^2
+============================================================
+ t=5e-05    eps=2.5e-09  rho(P)-1 = 2.777e-08
+ t=0.0001   eps=1.0e-08  rho(P)-1 = 3.593e-08
+ t=0.00015  eps=2.2e-08  rho(P)-1 = 2.447e-08
+ t=0.0005   eps=2.5e-07  rho(P)-1 = -6.051e-07
+ t=0.01     eps=1.0e-04  rho(P)-1 = -3.838e-04
+
+################################################################
+### make_fingerprints.py (novelty-audit fingerprints)
+################################################################
+Saved exact_fingerprints.json: A, B and three rational Gaussian-kernel instances.
+
+################################################################
+### make_figure.py (Figure 1)
+################################################################
+Figure saved: gaussian_stability_diagram.png/.pdf

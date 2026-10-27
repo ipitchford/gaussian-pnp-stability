@@ -1,0 +1,9 @@
+Licensing for this package
+==========================
+
+Text, figures, records and data (*.md, *.json, *.txt, *.yaml, *.png, *.pdf, certificates/): CC0-1.0
+  https://creativecommons.org/publicdomain/zero/1.0/  (see LICENSE-CC0)
+
+Code (*.py, pdf_header.tex, .github/workflows/): MIT licence (see LICENSE-MIT)
+
+Component map: LICENSES.md

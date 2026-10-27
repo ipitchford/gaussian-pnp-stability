@@ -1,0 +1,464 @@
+{
+  "status": "All listed exact checks passed; unrestricted theorems have prose proofs, not proof-assistant verification.",
+  "python": "3.11.14",
+  "elapsed_seconds": 0.006685625005047768,
+  "checks": [
+    {
+      "name": "W row 1 stochastic",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B row 1 stochastic",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "pi stationary coordinate 1",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "detailed balance (1,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "detailed balance (1,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "detailed balance (1,3)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "W row 2 stochastic",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B row 2 stochastic",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "pi stationary coordinate 2",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "detailed balance (2,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "detailed balance (2,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "detailed balance (2,3)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "W row 3 stochastic",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B row 3 stochastic",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "pi stationary coordinate 3",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "detailed balance (3,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "detailed balance (3,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "detailed balance (3,3)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B characteristic polynomial",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "W characteristic polynomial",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "full P characteristic polynomial",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "det(I-P)=t F",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "P quotient Jury value at +1",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "full R generalised characteristic polynomial",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "R quotient Jury value at +1",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "positive R denominator",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "phase-boundary discriminant",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "consensus projector idempotent (0,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "consensus projector idempotent (0,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "consensus projector idempotent (0,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "consensus projector idempotent (1,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "consensus projector idempotent (1,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "consensus projector idempotent (1,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "consensus projector idempotent (2,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "consensus projector idempotent (2,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "consensus projector idempotent (2,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "v projector idempotent (0,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "v projector idempotent (0,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "v projector idempotent (0,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "v projector idempotent (1,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "v projector idempotent (1,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "v projector idempotent (1,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "v projector idempotent (2,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "v projector idempotent (2,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "v projector idempotent (2,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "third projector idempotent (0,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "third projector idempotent (0,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "third projector idempotent (0,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "third projector idempotent (1,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "third projector idempotent (1,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "third projector idempotent (1,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "third projector idempotent (2,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "third projector idempotent (2,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "third projector idempotent (2,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B spectral decomposition (0,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B spectral decomposition (0,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B spectral decomposition (0,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B spectral decomposition (1,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B spectral decomposition (1,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B spectral decomposition (1,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B spectral decomposition (2,0)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B spectral decomposition (2,1)",
+      "status": "passed",
+      "residual_coefficients": 0
+    },
+    {
+      "name": "B spectral decomposition (2,2)",
+      "status": "passed",
+      "residual_coefficients": 0
+    }
+  ],
+  "concrete": {
+    "epsilon": "1/1000",
+    "t": "1/4",
+    "B": [
+      [
+        "17/45",
+        "71/180",
+        "41/180"
+      ],
+      [
+        "71/180",
+        "43/90",
+        "23/180"
+      ],
+      [
+        "41/180",
+        "23/180",
+        "29/45"
+      ]
+    ],
+    "W": [
+      [
+        "1999/2000",
+        "19/40000",
+        "1/40000"
+      ],
+      [
+        "1/2000",
+        "1949/2000",
+        "1/40"
+      ],
+      [
+        "1/2000",
+        "19/40",
+        "1049/2000"
+      ]
+    ],
+    "pi": [
+      "1/2",
+      "19/40",
+      "1/40"
+    ],
+    "det_I_minus_P": "-2898619/51200000000",
+    "det_I_minus_R": "-26087571/648290000000"
+  },
+  "phase_polynomial_F": [
+    {
+      "powers_epsilon_t_lambda": [
+        0,
+        1,
+        0
+      ],
+      "coefficient": "-1/240"
+    },
+    {
+      "powers_epsilon_t_lambda": [
+        0,
+        2,
+        0
+      ],
+      "coefficient": "29/7200"
+    },
+    {
+      "powers_epsilon_t_lambda": [
+        1,
+        0,
+        0
+      ],
+      "coefficient": "1/2"
+    },
+    {
+      "powers_epsilon_t_lambda": [
+        1,
+        1,
+        0
+      ],
+      "coefficient": "61/240"
+    },
+    {
+      "powers_epsilon_t_lambda": [
+        1,
+        2,
+        0
+      ],
+      "coefficient": "-29/3600"
+    },
+    {
+      "powers_epsilon_t_lambda": [
+        2,
+        0,
+        0
+      ],
+      "coefficient": "1/2"
+    },
+    {
+      "powers_epsilon_t_lambda": [
+        2,
+        1,
+        0
+      ],
+      "coefficient": "-1/4"
+    },
+    {
+      "powers_epsilon_t_lambda": [
+        2,
+        2,
+        0
+      ],
+      "coefficient": "29/7200"
+    }
+  ],
+  "discriminant_polynomial": [
+    {
+      "powers_epsilon_t_lambda": [
+        0,
+        0,
+        0
+      ],
+      "coefficient": "1"
+    },
+    {
+      "powers_epsilon_t_lambda": [
+        1,
+        0,
+        0
+      ],
+      "coefficient": "-584"
+    },
+    {
+      "powers_epsilon_t_lambda": [
+        2,
+        0,
+        0
+      ],
+      "coefficient": "3136"
+    }
+  ],
+  "scope_limits": [
+    "No formal proof assistant was used.",
+    "Universal sign inequalities are proved in Section 10 of gaussian_pnp_stability.md; no parameter grid is used.",
+    "Novelty is assessed separately against the recorded literature corpus."
+  ]
+}

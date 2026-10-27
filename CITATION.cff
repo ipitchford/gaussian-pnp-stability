@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Gaussian-kernel plug-and-play iterations can be unstable: a sharp dimension threshold for irreducible unit-diagonal kernels, the role of the mixing gap, and why unit diagonals matter"
+version: 1.0.0-candidate
+date-released: 2026-10-27
+doi: 10.5281/zenodo.23690125
+authors:
+  - name: Anonymous
+license: CC0-1.0
+repository-code: "https://github.com/ipitchford/gaussian-pnp-stability"
+url: "https://evidencepress.org/releases/gaussian-pnp-stability/"
+abstract: "Unrefereed research candidate. Answers the open question of Sinha et al. (IEEE TSP 2025, Sec. II-A) for PnP-ISTA and PnP-ADMM with row-normalised kernel denoisers: irreducible unit-diagonal kernels with constant-preserving Hessians are stable in dimensions one to three and can be unstable in dimension four (explicit Gaussian family, exact certificates); a positive convolution example fails for very small steps; without unit diagonals failure occurs in dimension three. The divergence is extremely slow (at most about 1.7e-5 per iteration). Safe steps scale with the mixing gap; symmetrised denoisers are stable."
+keywords:
+  - plug-and-play
+  - kernel denoiser
+  - non-local means
+  - Schur stability
+  - PnP-ISTA
+  - PnP-ADMM
+  - mixing gap
+  - exact certificate
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23690124
+    description: Concept DOI (all versions)
